@@ -1,0 +1,180 @@
+:root {
+  --content-width: 50vw;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+b {
+  display: inline;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  :root {
+    --content-width: 95vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  :root {
+    --content-width: 85vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --content-width: 75vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    --content-width: 65vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    --content-width: 55vw;
+  }
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.logo {
+  margin-inline: auto;
+  width: var(--content-width);
+}
+
+.container {
+  display: inherit;
+  flex-direction: inherit;
+
+  margin: 1em auto;
+  padding: 2em;
+
+  border-radius: 1em;
+
+  width: var(--content-width);
+}
+
+.acct-info {
+  color: #e9eff5;
+  background-color: #3a88c7;
+
+  align-items: center;
+}
+
+.acct-info > div {
+  font-size: 1.3em;
+}
+
+.btn {
+  padding: 0.5em 1em;
+
+  border-radius: 999px;
+
+  color: rgb(238, 243, 247);
+  background-color: #2d4566;
+}
+
+.btn:hover {
+  color: #2d2e30;
+  background-color: #dbe2e8;
+}
+
+.important {
+  color: #4d0c0c;
+  background: #ff4646;
+
+  align-items: center;
+}
+
+.other-info {
+  color: #2f353d;
+  background-color: #ebf2f8;
+}
+
+.faq {
+  margin-bottom: 3em;
+}
+
+.small {
+  padding-top: 0.5em;
+
+  font-size: 10pt;
+  font-style: italic;
+
+  color: #5b6269;
+}
