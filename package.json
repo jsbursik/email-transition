@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "mjml index.mjml -o email.html"
+  },
+  "dependencies": {
+    "g": "^2.0.1",
+    "mjml": "^4.13.0"
+  }
+}

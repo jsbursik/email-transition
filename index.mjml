@@ -1,0 +1,25 @@
+<mjml background-color="#c0c5c9">
+  <mj-body background-color="#ffffff">
+    <mj-section>
+      <mj-column width="600px">
+        <mj-image src="holiday_logo.png" alt="Holiday Auto Group" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#3379ce" border-radius="15px">
+      <mj-column>
+        <mj-text font-size="24px"
+                 font-family="Arial"
+                 color="#FFFFFF"
+                 align="center">
+          Hey {user_name}, your new email is ready!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section></mj-section>
+    <mj-section></mj-section>
+    <mj-section></mj-section>
+  
+  
+  
+  </mj-body>
+</mjml>
