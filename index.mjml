@@ -18,23 +18,25 @@
     <!-- Logo Section -->
     <mj-section background-color="#eceef2">
       <mj-column width="600px">
-        <mj-image href="https://holidayautogroup.com" src="https://i.ibb.co/TtHWrXh/holiday-logo.png" alt="Holiday Auto Group" />
+        <mj-image href="https://holidayautogroup.com" src="https://i.ibb.co/K7nGcvT/holiday-logo.png" alt="Holiday Auto Group" />
       </mj-column>
     </mj-section>
     <!-- User information section -->
     <mj-section background-color="#3379ce">
-      <mj-column width="450px">
+      <mj-column>
         <mj-text font-size="24px" color="#FFFFFF" align="center">
           Hey <b>{user_name}</b>, your new email is ready!
         </mj-text>
-        <mj-text font-size="20px" color="#FFFFFF" align="left">
-          Username: <a href="#" style="text-decoration: none; color: #FFFFFF; font-weight: 400">{user_email}</a>
+        <mj-text font-size="20px" color="#FFFFFF" align="center" padding-top="0">
+          <p> Username: </p>
+          <a href="#" style="text-decoration: none; color: #FFFFFF; font-weight: 400">{user_email}</a>
         </mj-text>
-        <mj-text font-size="20px" color="#FFFFFF" align="left" padding-top="0">
-          Password: {user_pass}
+        <mj-text font-size="20px" color="#FFFFFF" align="center">Password:</mj-text>
+        <mj-text font-size="16px" color="#FFFFFF" align="center" padding-top="0">
+          {user_pass}
         </mj-text>
         <mj-button href="https://login.microsoftonline.com" background-color="#FFFFFF" color="#252628" font-weight="800">
-          Login Here
+          LOGIN HERE
         </mj-button>
       </mj-column>
     </mj-section>
@@ -42,7 +44,7 @@
     <mj-section background-color="#eb5252">
       <mj-column>
         <mj-text color="#5e2828" align="center" font-size="30px">
-          <b>Login before: {login_date}</b>
+          <b>This account goes live {login_date}</b>
         </mj-text>
       </mj-column>
     </mj-section>

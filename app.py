@@ -13,9 +13,11 @@ load_dotenv()
 sender_email = "noreply@holidayautogroup.com"
 password = os.environ.get("NOREPLY_PASS")
 
+login_date = "[DATE HERE]"
+
 
 text = """
-    You need to view this email in HTML, if you see this, contact Jordan Bursik.
+    You need to view this email in HTML, if you see this contact Jordan Bursik.
 """
 
 
@@ -36,7 +38,7 @@ with smtplib.SMTP_SSL("smtp.ipower.com", 465, context=context) as server:
 
             msg.attach(MIMEText(text, "plain"))
             temp_HTML = html.replace("{user_name}", row["Display name"]).replace(
-                "{user_email}", row["Username"]).replace("{user_pass}", row["Password"]).replace("{login_date}", "March 11th, 2023")
+                "{user_email}", row["Username"]).replace("{user_pass}", row["Password"]).replace("{login_date}", login_date)
             msg.attach(MIMEText(temp_HTML, "html"))
             print(f"Sending email to {row['Display name']}...")
             server.sendmail(
