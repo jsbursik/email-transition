@@ -1,9 +1,25 @@
 {
+  "name": "email-transition",
+  "version": "1.0.0",
+  "description": "Internal tool for sending out email credentials automatically via email",
+  "main": "app.py",
   "scripts": {
-    "build": "mjml index.mjml -o email.html"
+    "build": "mjml index.mjml -o email.html",
+    "watch": "mjml index.mjml -w -o email.html"
   },
-  "dependencies": {
-    "g": "^2.0.1",
-    "mjml": "^4.13.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsbursik/email-transition.git"
+  },
+  "keywords": [
+    "holiday",
+    "email",
+    "python"
+  ],
+  "author": "Jordan Bursik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsbursik/email-transition/issues"
+  },
+  "homepage": "https://github.com/jsbursik/email-transition#readme"
 }
