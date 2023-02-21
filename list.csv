@@ -1,3 +1,3 @@
-Display name	Dealership/Management	Job	Username	Password	Licenses	Previous/New License	PC Name	Previous Email
-Jordan Bursik	Management	IT	jordan@holidayautogroup.com	Tes12345	Unlicensed	Previous		jordan@holidayautogroup.com
-Test User	Management	IT	marketing@holidayautogroup.com	Pas54321	Unlicensed			marketing@holidayautogroup.com
+Display name,Dealership/Management,Job,Username,Password,Licenses,Previous/New License,PC Name,Previous Email
+Jordan Bursik,Management,IT,jordan@holidayautogroup.com,Tes12345,Unlicensed,Previous,,jordan@holidayautogroup.com
+Test User,Management,IT,marketing@holidayautogroup.com,Pas54321,Unlicensed,,,marketing@holidayautogroup.com

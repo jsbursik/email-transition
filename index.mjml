@@ -1,25 +1,99 @@
 <mjml background-color="#c0c5c9">
-  <mj-body background-color="#ffffff">
-    <mj-section>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-family="Roboto, Arial, Helvetica, sans serif" color="#3b3d43"/>
+    </mj-attributes>
+    <mj-style>
+      a {
+        color: #3379ce;
+        font-weight: 800;
+      }
+
+      a:visited {
+        color: #3379ce;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#b7bec6">
+    <!-- Logo Section -->
+    <mj-section background-color="#eceef2">
       <mj-column width="600px">
-        <mj-image src="holiday_logo.png" alt="Holiday Auto Group" />
+        <mj-image href="https://holidayautogroup.com" src="https://i.ibb.co/TtHWrXh/holiday-logo.png" alt="Holiday Auto Group" />
       </mj-column>
     </mj-section>
-    <mj-section background-color="#3379ce" border-radius="15px">
+    <!-- User information section -->
+    <mj-section background-color="#3379ce">
+      <mj-column width="450px">
+        <mj-text font-size="24px" color="#FFFFFF" align="center">
+          Hey <b>{user_name}</b>, your new email is ready!
+        </mj-text>
+        <mj-text font-size="20px" color="#FFFFFF" align="left">
+          Username: <a href="#" style="text-decoration: none; color: #FFFFFF; font-weight: 400">{user_email}</a>
+        </mj-text>
+        <mj-text font-size="20px" color="#FFFFFF" align="left" padding-top="0">
+          Password: {user_pass}
+        </mj-text>
+        <mj-button href="https://login.microsoftonline.com" background-color="#FFFFFF" color="#252628" font-weight="800">
+          Login Here
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <!-- Login Date -->
+    <mj-section background-color="#eb5252">
       <mj-column>
-        <mj-text font-size="24px"
-                 font-family="Arial"
-                 color="#FFFFFF"
-                 align="center">
-          Hey {user_name}, your new email is ready!
+        <mj-text color="#5e2828" align="center" font-size="30px">
+          <b>Login before: {login_date}</b>
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-section></mj-section>
-    <mj-section></mj-section>
-    <mj-section></mj-section>
-  
-  
-  
+    <!-- Questions Section -->
+    <mj-section background-color="#eceef2">
+      <mj-column>
+        <mj-text font-size="30px"><b>Questions</b></mj-text>
+
+        <mj-text font-size="18px" padding-top="20px">
+          <b>What about my old email address? (If changed)</b>
+        </mj-text>
+        <mj-text font-size="18px" padding-top="0">
+          Don't worry about it. 
+        </mj-text>
+        <mj-text font-size="13px" padding-top="0">
+          All emails to your prior address will be forwarded to your new address. You can change your business cards whenever you want.
+        </mj-text>
+
+        <mj-text font-size="18px"  padding-top="20px">
+          <b>What about the emails on my Computer?</b>
+        </mj-text>
+        <mj-text font-size="18px" padding-top="0">
+          They will have to get transferred to the new account. 
+        </mj-text>
+        <mj-text font-size="13px" padding-top="0">
+          If you are a manager or in accounting, Jordan will come around to do this for you. Sales personnel will no longer use software (Thunderbird, Outlook, etc.), they will use the <a href="https://outlook.com">online portal</a> instead.
+        </mj-text>
+
+        <mj-text font-size="18px" padding-top="20px">
+          <b>What about the emails on my Phone?</b>
+        </mj-text>
+        <mj-text font-size="18px" padding-top="0">
+          Good news, you'll be able to set up the account yourself.
+        </mj-text>
+        <mj-text font-size="13px" padding-top="0">
+          This goes for <b>everybody.</b> If you use an iPhone you can <a href="https://support.microsoft.com/en-us/office/set-up-an-outlook-account-on-the-ios-mail-app-7e5b180f-bc8f-45cc-8da1-5cefc1e633d1">follow this guide</a>. If you use an Android, there are too many mail apps for me to link guides to. Look up your app and how to add a Microsoft Exchange account.
+          <b>I will not help people who don't even try to use a guide. There are too many employees for me to do this for everyone.</b>
+        </mj-text>
+
+        <mj-text font-size="18px" padding-top="20px">
+          <b>Do I have to use the Microsoft Authenticator?</b>
+        </mj-text>
+        <mj-text font-size="18px" padding-top="0">
+          You have to use an Authenticator, it doesn't have to be Microsoft's.
+        </mj-text>
+        <mj-text font-size="13px" padding-top="0">
+          The authenticator is a requirement of the FTC to protect customer information. If you have an authenticator you already use, click the option during your account setup to use a different authenticator. I suggest the Google Authenticator, it's super simple and used by a lot of other services.
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
   </mj-body>
 </mjml>
